@@ -1,0 +1,233 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.body{
+    /* border: 2px solid red; */
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    color: white;
+    border-radius: 10px;
+
+}
+
+.parent {
+    position: relative;
+    top: 0;
+    left: 0;
+    padding-left: 20px;
+  }
+  .image1 {
+    position: relative;
+    top: 0;
+    left: 0;
+    /* border: 2px solid blue; */
+    border-radius: 10px;
+    /* height: 100vh; */
+  }
+  .image2 {
+    position: absolute;
+    top: 100px;
+    left: 110px;
+    /* border: 1px green solid; */
+  }
+
+.image3{
+    position: absolute;
+    top: 400px;
+    left: 170px;
+    /* border: 1px black solid; */
+}
+
+.firstText{
+    position: absolute;
+    top: 240px;
+    left: 140px;
+    font-size: 40px;
+    /* font-stretch: extra-expanded; */
+    
+}
+
+.secondText{
+    position: absolute;
+    top: 290px;
+    left: 140px;
+}
+
+.thirdText{
+    position: absolute;
+    top: 290px;
+    left: 450px;
+}
+
+.img{
+    position: absolute;
+    top: 120px;
+    left: 140px;
+}
+
+.forthText{
+    position: absolute;
+    top: 440px;
+    left: 550px;
+}
+
+.container{
+    justify-content: center;
+    width: 500px;
+  margin: 300px 280px;
+  font-size: 20px;
+  color: #353434;
+  background: transparent;
+  border-radius: 5px;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+}
+
+#cardholder_name{
+    /* border: rgb(31, 29, 29); */
+    border-radius: 10px;
+    width: 380px;
+    height: 35px;
+    border: 1px solid #bbbbbb;
+}
+
+#number{
+    border-radius: 10px;
+    width: 380px;
+    height: 35px;
+    border: 1px solid #bbbbbb;
+    
+}
+
+/* #month{
+    border-radius: 6px;
+    width: 60px;
+    height: 35px;
+}
+
+#year{
+    border-radius: 6px;
+    width: 60px;
+    height: 35px;
+} */
+
+.expiration {
+    border: 1px solid #bbbbbb;
+    width: 100px;
+    height: 35px;
+    border-radius: 10px;
+}
+.expiration input {
+    border: 0;
+}
+
+#cvc{
+    border-radius: 10px;
+    width: 80px;
+    height: 35px;
+    border: 1px solid #bbbbbb;
+}
+
+.confirm {
+    color: white;
+    background: #040013;
+    border: none;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    margin-left: 20px;
+    font-size: 18px;
+    cursor: pointer;
+    width: 380px;
+    height: 30px;
+    transition: 2s;
+  }
+  
+  /* .confirm:hover {
+    background-color: #fff;
+    transition: 1s ease;
+  } */
+
+  @media (max-width: 765px) {
+    body{
+      padding-bottom: 2rem;
+    }
+
+    .body{
+        /* border: 2px solid red; */
+      grid-template-columns: unset;
+      border-radius: unset;
+      width: 100%;
+    }
+
+    .image1 {
+        position: relative;
+        top: 0;
+        left: 0;
+        /* border: 2px solid blue; */
+        border-radius: unset;
+        height: 500px;
+        width: 100%;
+    }
+
+    .image3 {
+        position: absolute;
+        top: 80px;
+        left: 90px;
+        /* border: 1px black solid; */
+      }
+
+      .image2 {
+        position: absolute;
+        top: 230px;
+        left: 30px;
+        /* border: 1px green solid; */
+      }
+
+      .firstText{
+        position: absolute;
+        top: 380px;
+        left: 50px;
+    }
+    
+    .secondText{
+        position: absolute;
+        top: 430px;
+        left: 50px;
+    }
+    
+    .thirdText{
+        position: absolute;
+        top: 430px;
+        left: 400px;
+    }
+    
+    .img{
+        position: absolute;
+        top: 260px;
+        left: 50px;
+    }
+
+    .forthText{
+        position: absolute;
+        top: 190px;
+        left: 430px;
+    }
+
+    .container{
+        justify-content: center;
+        width: 100%;
+        height: 300px;
+      margin: 50px auto;
+      font-size: 20px;
+      color: #353434;
+      background: transparent;
+      border-radius: 5px;
+      border-top: none;
+      border-left: none;
+      border-right: none;
+      padding-left: 50px;
+    }
